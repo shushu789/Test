@@ -7,6 +7,8 @@ const path1 = "/Member/getUserInfo";
 if(url.indexOf(path1)!=-1){
   let obj = JSON.parse(body);
   obj.data.is_vip = 1;
+  obj.data.user_viptime = "2099-01-10 11:11:11";
+  obj.data.member_name = "1888888888";
   body = JSON.stringify(obj);
 
 }
