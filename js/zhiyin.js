@@ -5,8 +5,8 @@ if(url.indexOf(path1)!=-1){
   let obj = JSON.parse(body);
   obj.code = 200;
   obj.message = "ok";
-  obj.err_code = 200;
-  obj.surplus_time = 600;
+  obj.data.err_code = 200;
+  obj.data.surplus_time = 600;
 
   body = JSON.stringify(obj);
 
