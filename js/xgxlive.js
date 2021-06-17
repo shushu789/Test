@@ -15,6 +15,8 @@ if(url.indexOf(path1)!=-1){
   obj.result.mobile = "1-88888";
   obj.result.expired_time = 100;
   obj.result.expired_days = 100;
+  obj.result.no_agents = 0;
+
   body = JSON.stringify(obj);
 
 }
