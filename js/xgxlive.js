@@ -13,7 +13,7 @@ const path1 = "/App/User/Info";
 if(url.indexOf(path1)!=-1){
   let obj = JSON.parse(body);
   obj.result.mobile = "1-88888";
-  //obj.result.expired_time = 100;
+  obj.result.expired_time = 100;
   //obj.result.expired_days" = 100;
   body = JSON.stringify(obj);
 
