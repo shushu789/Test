@@ -9,7 +9,7 @@ if(url.indexOf(path1)!=-1){
   obj.data.is_vip = 1;
   obj.data.user_viptime = "2099-01-10 11:11:11";
   obj.data.member_name = "1888888888";
-  obj.data.no_agents = 0;
+ 
   body = JSON.stringify(obj);
 
 }
