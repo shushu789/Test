@@ -6,13 +6,15 @@
 var body = $response.body;
 var url = $request.url;
 const path1 = "/api/tiny-shop/v1/member/member/index";
+const path2 = "api/tiny-shop/v1/live/room/join";
+
 if(url.indexOf(path1)!=-1){
     let obj = JSON.parse(body);
-    obj.data.level = "6";
+    obj.data.level = "8";
     //obj.data.is_vip = 1;
     obj.data.is_adm = 1;
     obj.data.is_open_commission = 1;
-    obj.data.current_level = "6";
+    obj.data.current_level = "8";
     //obj.data.pid = "625000";
 
     obj.data.memberLevel.level = "6";
@@ -30,8 +32,7 @@ if(url.indexOf(path1)!=-1){
     // obj.data.stats.day_short_video = 6000;
 
     obj.data.coupon_num = "10";
-    obj.data.current_level = "6";
-    obj.data.account.level = "6"
+    obj.data.account.level = "8"
     obj.data.role = "20";
 
     obj.data.memberLevel.created_at = "1601207013";
@@ -39,5 +40,14 @@ if(url.indexOf(path1)!=-1){
 
     body = JSON.stringify(obj);
 
+}
+if(url.indexOf(path2)!=-1){
+    let obj = JSON.parse(body);
+    obj.code = 200;
+    obj.message = "ok";
+    obj.data.err_code = 200;
+    obj.data.surplus_time = 600;
+
+    body = JSON.stringify(obj);
 }
 $done(body);
