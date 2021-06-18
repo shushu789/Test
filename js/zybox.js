@@ -8,7 +8,7 @@ var url = $request.url;
 const path1 = "/api/tiny-shop/v1/member/member/index";
 if(url.indexOf(path1)!=-1){
     let obj = JSON.parse(body);
-    obj.data.level = "1";
+    obj.data.level = "5";
     obj.data.is_vip = 1;
 
     obj.pid = "625000";
