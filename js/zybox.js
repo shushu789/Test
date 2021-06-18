@@ -7,7 +7,7 @@ var body = $response.body;
 var url = $request.url;
 //const path1 = "/api/tiny-shop/v1/member/member/index";
 
-const path1 = "/api/tiny-shop/v1/site/login"
+const path1 = "/api/tiny-shop/v1/site/login";
 
 const path2 = "/api/tiny-shop/v1/live/room/join";
 
