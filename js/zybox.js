@@ -5,10 +5,10 @@
 
 var body = $response.body;
 var url = $request.url;
-//const path1 = "/api/tiny-shop/v1/member/member/index";
+const path2 = "/api/tiny-shop/v1/member/member/index";
 
-const path2 = "/api/tiny-shop/v1/site/login";
-const path3 = "/api/tiny-shop/v1/live/room/join";
+const path1 = "/api/tiny-shop/v1/site/login";
+//const path3 = "/api/tiny-shop/v1/live/room/join";
 
 if(url.indexOf(path1)!=-1){
     let obj = JSON.parse(body);
