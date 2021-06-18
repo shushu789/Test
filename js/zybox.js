@@ -7,9 +7,8 @@ var body = $response.body;
 var url = $request.url;
 //const path1 = "/api/tiny-shop/v1/member/member/index";
 
-const path1 = "/api/tiny-shop/v1/site/login";
-
-const path2 = "/api/tiny-shop/v1/live/room/join";
+const path2 = "/api/tiny-shop/v1/site/login";
+const path3 = "/api/tiny-shop/v1/live/room/join";
 
 if(url.indexOf(path1)!=-1){
     let obj = JSON.parse(body);
@@ -40,7 +39,17 @@ if(url.indexOf(path1)!=-1){
     obj.data.memberLevel.created_at = "1901207013";
 
 */
+
     body = JSON.stringify(obj);
 
+}
+
+if(url.indexOf(path2)!=-1){
+    let obj = JSON.parse(body);
+    //obj.data.level = "6";
+    obj.data.is_vip = 1;
+    obj.data.vip_time = "2539100750";
+    body = JSON.stringify(obj);
+    obj.data.memberLevel.give_vip_time = "10000";
 }
 $done(body);
