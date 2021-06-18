@@ -10,6 +10,7 @@ if(url.indexOf(path1)!=-1){
     let obj = JSON.parse(body);
     obj.data.level = "6";
     obj.data.is_vip = 1;
+    /*
     obj.data.coupon_num = "10";
     obj.data.current_level = "6";
     obj.data.account.level = "6"
@@ -28,6 +29,7 @@ if(url.indexOf(path1)!=-1){
     obj.stats.day_short_video = 6000;
     obj.vip_time = "2539100750"
     obj.pid = "625000";
+     */
     body = JSON.stringify(obj);
 
 }
