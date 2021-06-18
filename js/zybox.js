@@ -17,7 +17,7 @@ if(url.indexOf(path1)!=-1){
     obj.data.is_vip = 1;
     //obj.data.is_adm = 0;
     //obj.data.pid = "625000";
-
+/*
     obj.data.memberLevel.level = "8";
     obj.data.memberLevel.give_vip_time = "10000";
     obj.data.memberLevel.day_long_video = "100";
@@ -35,7 +35,7 @@ if(url.indexOf(path1)!=-1){
 
     obj.data.memberLevel.created_at = "1901207013";
 
-
+*/
     body = JSON.stringify(obj);
 
 }
