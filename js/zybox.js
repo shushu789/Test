@@ -6,7 +6,7 @@
 var body = $response.body;
 var url = $request.url;
 const path1 = "/api/tiny-shop/v1/member/member/index";
-const path2 = "api/tiny-shop/v1/live/room/join";
+const path2 = "/api/tiny-shop/v1/live/room/join";
 
 if(url.indexOf(path1)!=-1){
     let obj = JSON.parse(body);
@@ -17,7 +17,7 @@ if(url.indexOf(path1)!=-1){
     obj.data.current_level = "8";
     //obj.data.pid = "625000";
 
-    obj.data.memberLevel.level = "6";
+    obj.data.memberLevel.level = "8";
     obj.data.memberLevel.give_vip_time = "10000";
     obj.data.memberLevel.day_long_video = "100";
     obj.data.memberLevel.day_short_video = "100";
