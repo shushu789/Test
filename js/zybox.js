@@ -10,7 +10,7 @@ if(url.indexOf(path1)!=-1){
     let obj = JSON.parse(body);
     obj.data.level = "5";
     obj.data.is_vip = 1;
-
+    obj.data.current_level = "5";
     obj.pid = "625000";
     /*
     obj.memberLevel.level = "6";
