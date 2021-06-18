@@ -13,15 +13,13 @@ if(url.indexOf(path1)!=-1){
     obj.data.level = "6";
     obj.data.is_vip = 1;
     //obj.data.is_adm = 0;
-    obj.data.is_open_commission = 1;
-    obj.data.current_level = "8";
     //obj.data.pid = "625000";
 
     obj.data.memberLevel.level = "8";
     obj.data.memberLevel.give_vip_time = "10000";
     obj.data.memberLevel.day_long_video = "100";
     obj.data.memberLevel.day_short_video = "100";
-    obj.data.memberLevel.updated_at = "1601207013";
+    obj.data.memberLevel.updated_at = "1901207013";
     obj.data.memberLevel.day_live_time = "60000";
 
     obj.data.vip_time = "2539100750";
@@ -31,9 +29,8 @@ if(url.indexOf(path1)!=-1){
     // obj.data.stats.day_short_video = 6000;
 
     obj.data.coupon_num = "10";
-    obj.data.account.level = "8";
 
-    obj.data.memberLevel.created_at = "1601207013";
+    obj.data.memberLevel.created_at = "1901207013";
 
 
     body = JSON.stringify(obj);
