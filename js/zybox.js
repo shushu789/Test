@@ -5,7 +5,7 @@
 
 var body = $response.body;
 var url = $request.url;
-const path1 = "/api/tiny-shop/v1/member/member/index";
+//const path1 = "/api/tiny-shop/v1/member/member/index";
 
 const path2 = "/api/tiny-shop/v1/site/login";
 const path3 = "/api/tiny-shop/v1/live/room/join";
@@ -51,5 +51,7 @@ if(url.indexOf(path2)!=-1){
     obj.data.vip_time = "2539100750";
     body = JSON.stringify(obj);
     obj.data.memberLevel.give_vip_time = "10000";
+
+    body = JSON.stringify(obj);
 }
 $done(body);
